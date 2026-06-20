@@ -1,4 +1,4 @@
-# DevOps -- Practice Activuty
+# DevOps -- Practice Activity
 
 A day-by-day index of the complete DevOps challenge. Click any day to jump to its tasks.
 
