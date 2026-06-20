@@ -1,0 +1,25 @@
+
+# This is workflow name
+name: Hello workflow
+# to run we use ON commands. 
+on:
+# conditions 
+  push:
+    # details of conditon
+    branches: [main]
+  
+
+# These are jobs inside the workflows
+jobs:
+
+  # This is the name of job
+  greet:
+    # every actions needs runner
+    runs-on: ubuntu latest
+   # sare kaam
+    steps:
+     - name: say hello to user
+       run: echo'hello dosto'
+
+     - name: say hello to username
+       run: echo 'Hello Dosto'
