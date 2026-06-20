@@ -3,6 +3,7 @@ on:
     push:
         branches: [main]
 permissions:
+    contents: read
     pages: write
     id-token: write
 jobs:
@@ -21,7 +22,7 @@ jobs:
               # setup github pages
 
             - name: setup github pages
-              uses: actions/configure-pages@v4
+              uses: actions/configure-pages@v5
 
               # static code artifacts  - to load faster taki load balance kr sake
             - name: upload static files
