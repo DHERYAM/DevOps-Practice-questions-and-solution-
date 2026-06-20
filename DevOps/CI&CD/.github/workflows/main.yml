@@ -15,11 +15,11 @@ jobs:
   # This is the name of job
   greet:
     # every actions needs runner
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
    # sare kaam
     steps:
      - name: say hello to user
-       run: echo'hello dosto'
+       run: echo 'hello dosto'
 
      - name: say hello to username
        run: echo 'Hello Dosto'
