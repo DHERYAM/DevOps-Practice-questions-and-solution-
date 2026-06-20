@@ -1,0 +1,17 @@
+# what is the goal of workflow
+#Goal: Whenever someone changes the file, the linter will check if the syntax, format, intendationslinting is correct or not.
+name: autocorrector
+on:
+  push:
+    paths: "*.py"
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    # this will automatically clone the code
+    steps:
+      - name: clone/checkout the code
+      # automatic clone the code paths using github actions
+        uses: actions/checkout@v7
+        #this step will start the linting tool
+      - name: install linter
+        run: pip install ruff 
